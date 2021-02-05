@@ -1,38 +1,128 @@
-.App {
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.screen-left {
+  width: 50vw;
+}
+
+.nav-container {
+  padding-top: 20em;
+  padding-left: 50px;
+}
+
+.navigation ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+li + li {
+  margin-top: 50px;
+}
+
+.navigation li {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.navigation  li.name {
+  font-family: 'Roboto', sans-serif;
+  color: #506532;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.mobile {
+  display: none;
+}
+
+.screen-right {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  border: 2px black solid;
+  /* height: 100vh; */
+  width: 50vw;
+  overflow-y: scroll;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+  /* width: 50vw; */
+  background-image: url("https://i.ibb.co/5Mc3yZC/annie-spratt-h-X-hf2l-Pp-UU-unsplash.jpg");
+  background-size: cover;
+}
+
+.content {
+  width: 400px;
+  border-top: 1px solid black;
+  margin: 10em 6em;
+}
+
+.message {
+  margin: -4em 2em 0 2em;
+  padding-left: 5em;
+  /* margin-bottom: 10em; */
+}
+
+h1 {
+  color: black;
+  font: 'Poppins', sans-serif;
+  font-size: 42px;
+  font-weight: 300;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  color: #506532;
+  font: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* @media screen and (max-width: 1024px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
   }
-}
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* @media (max-width: 850px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10em;
+    padding-left: 0;
   }
-}
+  .screen-left {
+    height: 100%;
+    width: 100%;
+  }
+  .screen-right {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
+} */
