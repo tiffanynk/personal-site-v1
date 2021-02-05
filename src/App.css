@@ -90,13 +90,64 @@ h3 {
   font-weight: 300;
 }
 
-/* @media screen and (max-width: 1024px) {
+@media (max-width: 768px) { 
   .container {
     height: 100vh;
     width: 100vw;
-    position: relative;
+    display: flex;
+    flex-direction: column;
   }
-} */
+  .screen-left {
+    width: 100vw;
+  }
+
+  .screen-right {
+    display: none;
+  }
+
+  .nav-container {
+    padding-top: 0em;
+    padding-left: 0em;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .navigation ul {
+    margin: 3em;
+    list-style-type: none;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    width: 100vw;
+  }
+
+  .content {
+    width: 40vw;
+    margin: 5em;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .message {
+    margin: 2em;
+    padding-left: 0em;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
 
 /* @media (max-width: 850px) {
   .container {
